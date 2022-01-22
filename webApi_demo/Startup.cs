@@ -29,8 +29,9 @@ namespace webApi_demo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options=> 
-            options.UseMySql(Configuration.GetConnectionString("DefaultConection")));
+            options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
+           // services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "webApi_demo", Version = "v1" });
