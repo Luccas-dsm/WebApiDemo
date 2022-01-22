@@ -14,7 +14,6 @@ namespace webApi_demo.Context
         public AppDbContext()
         { }
 
-        public DbSet<Agenda> Agendas { get; set; }
         public DbSet<Contato> Contatos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

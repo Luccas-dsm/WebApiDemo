@@ -8,8 +8,8 @@ using webApi_demo.Context;
 namespace webApi_demo.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220122194236_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220122202045_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -18,30 +18,10 @@ namespace webApi_demo.Migrations
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("webApi_demo.models.Agenda", b =>
-                {
-                    b.Property<int>("IdTipo")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Endereco")
-                        .IsRequired()
-                        .HasMaxLength(40);
-
-                    b.Property<string>("PessoaFisica")
-                        .IsRequired()
-                        .HasMaxLength(40);
-
-                    b.HasKey("IdTipo");
-
-                    b.ToTable("Agenda");
-                });
-
             modelBuilder.Entity("webApi_demo.models.Contato", b =>
                 {
                     b.Property<int>("Idcontato")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int>("AgendaId");
 
                     b.Property<string>("Endereco")
                         .IsRequired()
@@ -57,17 +37,7 @@ namespace webApi_demo.Migrations
 
                     b.HasKey("Idcontato");
 
-                    b.HasIndex("AgendaId");
-
                     b.ToTable("Contato");
-                });
-
-            modelBuilder.Entity("webApi_demo.models.Contato", b =>
-                {
-                    b.HasOne("webApi_demo.models.Agenda", "Agenda")
-                        .WithMany("Contatos")
-                        .HasForeignKey("AgendaId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

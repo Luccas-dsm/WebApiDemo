@@ -24,8 +24,5 @@ namespace webApi_demo.models
         [Required]
         [MaxLength(14)]
         public string Telefone { get; set; }
-
-        public Agenda Agenda { get; set; }
-        public int AgendaId { get; set; }
     }
 }
