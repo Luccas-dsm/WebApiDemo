@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj": {}
+    "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj": {
+    "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj",
+        "projectUniqueName": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj",
         "projectName": "webApi_demo",
-        "projectPath": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj",
+        "projectPath": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj",
         "packagesPath": "C:\\Users\\lucca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\obj\\",
+        "outputPath": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -47,6 +47,26 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.Mysql": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

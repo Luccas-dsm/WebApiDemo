@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using webApi_demo.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace webApi_demo
 {
@@ -26,8 +28,9 @@ namespace webApi_demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options=> 
+            options.UseMySql(Configuration.GetConnectionString("DefaultConection")));
 
-            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "webApi_demo", Version = "v1" });
