@@ -3,6 +3,8 @@ using webApi_demo.models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
 
 namespace webApi_demo.Context
 {

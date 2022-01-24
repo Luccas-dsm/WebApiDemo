@@ -6,12 +6,13 @@ namespace webApi_demo.Migrations
     {
         protected override void Up(MigrationBuilder mb)
         {
-            mb.Sql();
+            mb.Sql("Insert into Contato (Nome,Endereco,Telefone) Values('Luccas', 'Rua Berlim', '31 99999-9999')");
+            mb.Sql("Insert into Contato (Nome,Endereco,Telefone) Values('Victor', 'Rua Baco', '31 99999-8888')");
         }
 
         protected override void Down(MigrationBuilder mb)
         {
-            mb.Sql();
+            mb.Sql( "Delete from Contato");
         }
     }
 }
