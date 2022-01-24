@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj",
+      "projectUniqueName": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj",
       "projectName": "webApi_demo",
-      "projectPath": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj",
+      "projectPath": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj",
       "packagesPath": "C:\\Users\\lucca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\obj\\",
+      "outputPath": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

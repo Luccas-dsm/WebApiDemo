@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fsWgQSyWyuTEfmmR86DLLOXz1VxMAn3NnEM/yMbeBD2lMytOm8+YWkEuh+jctjKS3PXWZXJGukmxJSyMwzxcWA==",
+  "dgSpecHash": "Z+lInOmDIBnglyj9MnnRUrl2qAHneX5o1m1jJaBEeMjh2Gzah+3ECSlqwMW+8ylQfUGBQnfyKIqxfYLymW21ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucca\\Desktop\\webapi\\webApi_demo\\webApi_demo.csproj",
+  "projectFilePath": "C:\\Users\\lucca\\Desktop\\webapi\\WebApiDemo\\webApi_demo\\webApi_demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucca\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\lucca\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
